@@ -7,38 +7,90 @@
     <title>Formulario</title>
 </head>
 <body>
-<!-- existen dos tipos principales de acciones GET y POST -->
-<!-- rutas donde se enviaran los datos -->    
-    <form action="./action.html" method="get">
-    <div>
-        <label for="nombre">Nombre:</label>
-        <div>
-            <input type="text" id="name" name=" Nombre" placeholder="John">
-        </div>
-    </div>
-    <br>
-    <div>
-        <label for="apellido">Apellidos:</label>
-        <div>            
-            <input type="text" id="last_name" name="Apellido" placeholder="Doe">
-        </div>
-    </div>
-    <br>
-    <div>
-        <label for="edad">Edad</label>
-        <div>
-            <input type="number" id="age" name="Edad" min="13" max="55" step="2" required>
-        </div>
-    </div>
-    <br>
-    <div>
-        <label for="description">Descripción</label>
-        <div>
-            <textarea name="description" id="description" cols="30" rows="10"></textarea>
-        </div>
+    <fieldset>
+        <legend>Registro de Datos</legend>
+        <!-- existen dos tipos principales de acciones GET y POST -->
+        <!-- rutas donde se enviaran los datos -->
+<!-- Forma -->    
+            <form action="./action.html" method="get">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <div>
+                    <input type="text" id="name" name=" Nombre" placeholder="John">
+                </div>
+            </div>
+            <br>
+            <div>
+                <label for="apellido">Apellidos:</label>
+                <div>            
+                    <input type="text" id="last_name" name="Apellido" placeholder="Doe">
+                </div>
+            </div>
+            <br>
+            <div>
+                <label for="edad">Edad</label>
+                <div>
+                    <input type="number" id="age" name="Edad" min="13" max="55" step="2" required>
+                </div>
+            </div>
+            <br>
+            <div>
+                <label for="description">Descripción</label>
+                <div>
+                    <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                </div>
         
-    </div>        
-        <input type="submit" value="Guardar">
-    </form> 
+<!-- Select -->
+        <div>
+            <label for="car">Carro</label>
+            <div>
+                <!--con disable puedo deshabilitar el input-->
+                <select name="car" id="car">
+                    <option value="">Selecciona un carro</option><!--esto es un placeholder, buscar una mejor opcion-->
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">FIAT</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+        </div>
+
+<!-- radio button -->        
+        <div>
+            <p>Selecciona tu Sexo</p>
+            <div>
+                <input type="radio" name="sexo" id="masculino" value="masculino">
+                <label for="masculino">Masculino</label>
+            </div>
+            <div>
+                <input type="radio" name="sexo" id="femenino" value="femenino">
+                <label for="femenino">Femenino</label>
+            </div>
+            <div>
+                <input type="radio" name="sexo" id="n/a" value="n/a">
+                <label for="n/a">Prefiero no decirlo</label>
+            </div>
+        </div>
+
+<!-- checkbox -->  
+       <div>
+           <p>Vehiculos con los que cuenta</p>
+           <div>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bici">
+            <label for="vehicle1"> Tengo una bici</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Carro">
+            <label for="vehicle2"> Tengo un carro</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Bote">
+            <label for="vehicle3"> Tengo un bote</label><br>
+           </div>
+       </div>
+        
+        <br>
+        <br>
+        
+            </div>        
+                <input type="submit" value="Guardar">
+            </form> 
+    </fieldset>    
 </body>
 </html>
