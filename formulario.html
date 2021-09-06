@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="./action.html" method="get">
+    <div>
+        <label for="nombre">Nombre:</label>
+        <div>
+            <input type="text" id="name" name=" Nombre" placeholder="John">
+        </div>
+    </div>
+    <br>
+    <div>
+        <label for="apellido">Apellidos:</label>
+        <div>            
+            <input type="text" id="last_name" name="Apellido" placeholder="Doe">
+        </div>
+    </div>
+    <br>
+    <div>
+        <label for="edad">Edad</label>
+        <div>
+            <input type="number" id="age" name="Edad" min="13" max="55" step="2" required>
+        </div>
+    </div>
+    <br>
+    <div>
+        <label for="description">Descripción</label>
+        <div>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        </div>
+        
+    </div>        
+        <input type="submit" value="Guardar">
+    </form> 
+</body>
+</html>
