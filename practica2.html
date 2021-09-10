@@ -6,7 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica 2</title>
 </head>
+
 <body>
+    <!-- existen dos tipos principales de acciones GET y POST -->
+    <!-- rutas donde se enviaran los datos -->
+<!-- Forma -->    
+<form action="./action.html" method="get">
+    <div>
+
+
+        <div style="float: left;">
+            <div style="float: left; width: 50%;">
+                <label for="email">Email:</label>
+                <div style="margin: 10px 5px auto auto;">
+                    <input type="text" id="email" name="email" placeholder="johndoe@gmail.com" size="50%">
+                </div>
+            </div>
+        
+            <div style="float: right; width: 50%;" >
+                <label for="password" style="margin: auto auto auto 5px;">Password:</label>
+                <div style="margin: 10px auto auto 5px;">           
+                    <input type="text" id="password" name="password" size="50%">
+                </div>
+            </div>
+        </div>
+
+        <div style="margin: 60px auto auto auto;">
+            <div style="float: left; width: 100%; margin-top: 10px;">
+                <label for="address">Address:</label>
+                                    <div style="margin: 10px auto auto auto;">            
+                        <input type="text" id="address" name="address" size="100%">
+                    </div>
+            </div>
+        </div>
+
+        <div style="margin: 120px auto auto auto;">
+            <div style="float: left; width: 100%; margin-top: 10px;">
+                <label for="address2">Address 2:</label>
+                                    <div style="margin: 10px auto auto auto;">            
+                        <input type="text" id="address2" name="address2" size="100%">
+                    </div>
+            </div>
+        </div>
+
+        <div style="margin: 180px auto auto auto;">
+            <div style="float: left; width: 100%; margin-top: 10px;"">
+                <div style="float: left;">
+                    <label for="city">City:</label>
+                    <div style="margin: 10px 5px auto auto;">
+                        <input type="text" id="city" name="city" placeholder="Portland" size="50%">
+                    </div>
+                </div>
+            
+                <div style="float: left;">
+                    <label for="state" style="margin: auto auto auto 5px;">State:</label>
+                    <div style="margin: 10px 5px auto 5px;">           
+                        <select name="car" id="car">
+                            <option value="">Select your state</option><!--esto es un placeholder, buscar una mejor opcion-->
+                            <option value="volvo">California</option>
+                            <option value="saab">Arkansas</option>
+                            <option value="fiat">Oregon</option>
+                            <option value="audi">ETC</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div style="float: left;">
+                    <label for="zip" style="margin: auto auto auto 5px;">ZIP:</label>
+                    <div style="margin: 10px auto auto 5px;">           
+                        <input type="text" id="zip" name="zip" size="20%">
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <div>
+            <div style="float: left;">
+                <div style="margin: 10px auto auto auto;">
+                    <input type="checkbox" id="checkbox" name="checkbox" value="on">
+                    <label for="vehicle1">Check me out!</label>
+                </div>
+                     
+                <div style="margin: 10px auto auto auto;">
+                    <button type="button" onclick="alert('Connected!')">Sign In</button>
+                </div>     
+            </div>
+        </div>    
+    </div>
+
     
 </body>
 </html>
