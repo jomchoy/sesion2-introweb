@@ -1,0 +1,21 @@
+/* Selectores Pseudo Clase */
+
+/* Links no visitados */
+a:link {
+    color: red;
+}
+
+/* Links visitados */
+a:visited {
+    color: green;
+}
+
+/* Mouse por encima */
+a:hover { 
+    color: hotpink;
+}
+
+/*  */
+a:active {
+    color: darkorchid;
+}

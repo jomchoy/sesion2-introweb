@@ -4,3 +4,22 @@ div p {
     background-color: darkorange;
 
 }
+
+/* Selector combinador con Hijo ">" */
+div > p {
+    background-color: deeppink;
+
+}
+
+/* Selector combinador adyacente "+" */
+
+div + p {
+    background-color: lightsalmon;
+}
+
+/* Selector general de hermanos */
+div ~ p {
+    background-color: lightseagreen;
+}
+
+

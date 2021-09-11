@@ -1,0 +1,19 @@
+p::first-letter {
+    color: red;
+    font-size: xx-large;
+}
+
+p::first-line {
+    color: blue;
+    font-variant: small-caps;
+}
+
+p {
+    width: 50%;
+}
+
+/* SELECTORES ATRIBUTOS */
+
+a[target=_blank] {
+    background-color: chartreuse;
+}
