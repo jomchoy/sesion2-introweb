@@ -1,0 +1,12 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition-property: width;
+    transition-duration: 5s;
+    transition-delay: .5s;
+}
+
+div:hover {
+    width: 300px;
+}

@@ -1,0 +1,15 @@
+div.a {
+    height: 80px;
+    width: 200px;
+    background-color: red;
+    transform: rotate(20deg);
+    margin-top: 50px;
+}
+
+div.b {
+    height: 80px;
+    width: 200px;
+    background-color: red;
+    transform: scaleY(1.5);
+    margin-top: 40px;
+}
