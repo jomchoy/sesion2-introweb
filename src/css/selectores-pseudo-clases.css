@@ -19,3 +19,10 @@ a:hover {
 a:active {
     color: darkorchid;
 }
+
+body {
+    background: yellowgreen url(./../../assets/img/kisspng-walter-white-jesse-pinkman-sticker-decal-art-walter-white-5ac5d06f8f6021.2236570415229133915873.png) 
+    no-repeat fixed center;
+    background-size: 20%;
+    
+}
