@@ -1,0 +1,62 @@
+.hilera {
+    display: flex;
+    padding: 5px;
+}
+
+.form-size {
+    width: 50%;
+}
+
+.col100 {
+    width: 100%;
+    padding-right: 24px;
+}
+
+.col50 {
+    width: 50%;
+    padding-right: 24px;
+}
+
+.col30 {
+    width: 30%;
+    padding-right: 5px;
+}
+
+.col20 {
+    width: 20%;
+    padding-right: 24px;
+}
+
+.design-entry{
+    width: 100%;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px 8px;
+    line-height: 1.5;
+}
+
+.selection {
+    padding: 6px;
+}
+
+
+.button {
+    color: white;
+    background-color: rgb(19, 95, 196);
+    border-color: rgb(19, 95, 196);
+    border: solid transparent;
+    border-radius: 5px;
+    padding: 5px 8px;
+    transition: color .15s
+    ease-in-out, background-color .15s
+}
+
+.button:hover {
+    background-color: rgb(34, 99, 238);
+}
+
+/* esto es para poner la manita en hover*/
+.boton:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
