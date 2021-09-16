@@ -5,7 +5,15 @@ div {
     transition-property: width;
     transition-duration: 5s;
     transition-delay: .5s;
+    color: whitesmoke;
 }
+
+
+#div1 {transition-timing-function: linear;}
+#div3 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;}
 
 div:hover {
     width: 300px;
