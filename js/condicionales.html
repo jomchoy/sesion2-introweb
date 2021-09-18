@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales</title>
+</head>
+<body>
+    <script>
+        const edad = Number(prompt('Ingrezsa tu edad:'));
+       
+       
+        if (edad < 20) {                                        // if
+            console.log('Eres mayor de 20 años');                    
+        } else if (edad >= 20 && edad <= 40) {                  // else- if
+            console.log('Tienes entre 20 y 40 años');
+        } else {                                                // else
+            console.log('Eres mayor de 40');
+            
+        }
+        
+// compuesta
+
+        if (edad >= 0 || (edad === 0) && (edad <= 100)){
+            console.log(edad + ' la edad esta en el rango de 0 a 100')
+        }
+        
+// switch
+        
+        const dayNumber = new Date().getDay();
+        switch (dayNumber) {        // dayNumber es el dia en el que estemos - puiedes cambiarlo a uno especifico pero dayNumber es dinamico
+            case 6:
+                text = 'Hoy es Sábado';
+                break;
+            case 0:
+                text = 'Hoy es Domingo';
+            default:
+                text = 'Hoy es un dia entre semana';
+        }
+
+        document.write(text);
+
+    </script>
+</body>
+</html>
