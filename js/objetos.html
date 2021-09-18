@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <script>
+        let persona = {
+            nombre: 'Walter',
+            appelidos: 'White',
+            aficiones: ['quimica', 'cocina', 'programar'],
+            inscrito: true
+        };
+
+        console.log(persona.nombre); // nombre de la persona
+        console.log(persona.inscrito); // si esta inscrito
+        console.log(persona.aficiones[1]); // su segunda aficion
+
+        console.log(Object.keys(persona).length) // para saber si un objeto esta vacio
+        // !! nos sirve para obtener el resultado tipo boolean
+        
+    </script>
+</body>
+</html>
