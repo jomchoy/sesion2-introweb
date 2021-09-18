@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles</title>
+</head>
+<body>
+    <script>
+        for (let i = 0; i < 6 ; i++) {
+            console.log('Paso numero: ' + i);
+
+        }
+
+        let a = 0, b = 0;
+        while (a < 6) {
+            console.log(a);
+            a++;
+        }
+
+// minimo se ejecuta una vez el codigo
+
+        do {
+            console.log(a);
+        } while (a < 6)
+
+// foreach - tiene como parametro una funcion la cual puede llevar los
+//value -> valor de la propiedad
+// index que es el indice en el que esta el iterador
+//aaray qe es el arreglo original que se esta iterando
+        const arreglo = [45, 5, 0, 30, 26, 7]
+
+        arreglo.forEach(function (value, index) {
+            console.log('El valor del indice' + index + ' es: ' + value)
+        });
+        
+    </script>
+</body>
+</html>
