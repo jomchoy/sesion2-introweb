@@ -31,10 +31,10 @@
 //aaray qe es el arreglo original que se esta iterando
         const arreglo = [45, 5, 0, 30, 26, 7]
 
-// función anonima - se tuiliza directamente como parametro en una funcion
-// su característica es que no tiene un nombre en específico
-// ejemplo .foreach()
-        arreglo.forEach(function (value, index) {
+// función de flecha (arrow function) es igual a la anonima solosin la palabra reservada function
+// y entre los parentesis y el bloque lleva la flecha "=>"
+// ejemplo Array.foreach()
+        arreglo.forEach((value, index, array) => {
             console.log('El valor del indice' + index + ' es: ' + value)
         });
         
