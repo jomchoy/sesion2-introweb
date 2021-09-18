@@ -31,13 +31,35 @@
 //aaray qe es el arreglo original que se esta iterando
         const arreglo = [45, 5, 0, 30, 26, 7]
 
-// función de flecha (arrow function) es igual a la anonima solosin la palabra reservada function
-// y entre los parentesis y el bloque lleva la flecha "=>"
-// ejemplo Array.foreach()
-        arreglo.forEach((value, index, array) => {
+        arreglo.forEach(miIterador); 
+
+// se declara y se puede utilizar en otras partes del 
+        function miIterador (value, index, array) {
             console.log('El valor del indice' + index + ' es: ' + value)
-        });
-        
+        }
+
+// metrodos de arreglos
+        console.log('metodos de arreglos')
+
+        console.log(arreglo)
+        console.log(arreglo.toString()) // tostring
+        console.log(arreglo.pop())  // pop - retorna y elimina el último valor
+        console.log(arreglo)
+        console.log(arreglo.push(55))   // push - añade un valor
+        console.log(arreglo)
+        console.log(arreglo.shift())    // shift - retorna y elimina el primer valor
+        console.log(arreglo)
+
+        console.log(arreglo.splice(2, 2)) // retorna y elimina en la posicion que se necesite
+        console.log(arreglo)
+
+        const resultado = arreglo.filter(value => {
+            return value > 20;
+        })
+        console.log(resultado);
+
+
+
     </script>
 </body>
 </html>
