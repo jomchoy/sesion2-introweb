@@ -57,6 +57,6 @@
 }
 
 /* esto es para poner la manita en hover*/
-.boton:not(:disabled):not(.disabled) {
+.button:not(:disabled):not(.disabled) {
     cursor: pointer;
 }
